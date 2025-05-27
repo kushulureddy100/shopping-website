@@ -1,0 +1,24 @@
+/* src/pages/Comments.css */
+
+.comments-page {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.review-list .list-group-item {
+  border-radius: 12px !important;
+  background-color: #fdfdfd;
+  transition: box-shadow 0.3s ease;
+}
+
+.review-list .list-group-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.review-list h5 {
+  margin-bottom: 5px;
+}
+
+.review-list p {
+  margin-bottom: 8px;
+}

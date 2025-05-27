@@ -1,0 +1,40 @@
+/* src/components/Cart.css */
+
+.cart-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cart-item-img {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.qty-input {
+  width: 70px;
+}
+
+.empty-cart-card {
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.summary-card {
+  border-radius: 12px;
+  background-color: #f8f9fa;
+}
+
+.checkout-modal .modal-content {
+  border-radius: 14px;
+  padding: 20px;
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.03);
+}

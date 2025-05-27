@@ -1,0 +1,20 @@
+.products-page {
+  padding: 32px;
+  text-align: center;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.products-title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #2e7d32;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 8px;
+}

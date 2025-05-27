@@ -1,0 +1,16 @@
+/* src/pages/ProductDetails.css */
+
+.product-details-page {
+  background-color: #f8f9fa;
+}
+
+.product-img {
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.quantity-input {
+  width: 80px;
+  text-align: center;
+}

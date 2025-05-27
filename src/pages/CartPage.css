@@ -1,0 +1,28 @@
+/* src/pages/CartPage.css */
+
+.cart-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.empty-cart .card {
+  border-radius: 12px;
+  background-color: #f8f9fa;
+}
+
+.qty-input {
+  width: 70px;
+  text-align: center;
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.cart-table th, .cart-table td {
+  vertical-align: middle;
+}

@@ -1,0 +1,32 @@
+/* src/pages/Account.css */
+
+.account-page {
+  height: 100vh;
+  background: linear-gradient(to right, #e3f2fd, #fff);
+  padding: 20px;
+}
+
+.form-card {
+  max-width: 450px;
+  width: 100%;
+}
+
+.btn-submit {
+  background-color: #0d6efd;
+  border: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  border-radius: 25px;
+}
+
+.btn-submit:hover {
+  transform: scale(1.03);
+  background-color: #084298;
+}
+
+.toggle-link {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #0d6efd;
+  text-decoration: underline;
+}

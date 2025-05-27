@@ -1,0 +1,25 @@
+/* src/components/LoginModal.css */
+
+.login-form {
+  padding: 10px 5px;
+}
+
+.custom-login-btn {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 0;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-login-btn:hover {
+  background-color: #084298;
+  transform: scale(1.02);
+}
+
+.login-modal .modal-content {
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}

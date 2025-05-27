@@ -1,18 +1,28 @@
-import { createContext, useState, useContext } from 'react';
+// src/context/CartContext.js
+import { createContext, useState, useContext, useEffect } from 'react';
 
 // Create context
 const CartContext = createContext();
 
 // Provider component
 export function CartProvider({ children }) {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(() => {
+    // Load from localStorage on first render
+    const storedCart = localStorage.getItem('cart');
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+
+  // Sync with localStorage whenever cartItems changes
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const addToCart = (product, quantity = 1) => {
     setCartItems(prev => {
       const existingItem = prev.find(item => item.id === product.id);
       if (existingItem) {
         return prev.map(item =>
-          item.id === product.id 
+          item.id === product.id
             ? { ...item, quantity: item.quantity + quantity }
             : item
         );
@@ -26,10 +36,11 @@ export function CartProvider({ children }) {
   };
 
   const updateQuantity = (productId, newQuantity) => {
-    if (newQuantity < 1) return;
     setCartItems(prev =>
       prev.map(item =>
-        item.id === productId ? { ...item, quantity: newQuantity } : item
+        item.id === productId
+          ? { ...item, quantity: Math.max(1, newQuantity) }
+          : item
       )
     );
   };

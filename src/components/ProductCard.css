@@ -1,0 +1,30 @@
+/* src/components/ProductCard.css */
+
+.product-card {
+  border-radius: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+.product-motion-wrapper {
+  margin: 10px;
+}
+.product-img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}

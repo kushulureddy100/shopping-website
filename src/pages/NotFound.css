@@ -1,0 +1,16 @@
+/* src/pages/NotFound.css */
+
+.not-found-page {
+  height: 100vh;
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.not-found-page h1 {
+  color: #0d6efd;
+}
+
+.not-found-page p {
+  color: #495057;
+}
